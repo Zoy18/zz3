@@ -1,23 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<DOCTYPE html>
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucky Dice Roll</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="game-container">
-        <h1>Dice Roller</h1>
-        
-        <div id="dice" class="dice">?</div>
-        
-        <button id="roll-btn">Roll the Dice!</button>
-        
-        <p id="message">Click the button to test your luck!</p>
-    </div>
-
-    <script src="script.js"></script>
+<meta charset="UTF-8" />
+<title>最終発表用レイアウト</title>
+<link rel="stylesheet" href="style.css"/>
+</head> <body>
+<div class="page">
+＜！ー-上段：プログラム名開発者－->
+<header class="top-section">
+<h1 class="program-title">ロプログラム名を書いてください</h1>
+<p class="developer-name">開発者：（学籍番号と氏名を書いてください</p>
+</header>
+<!--中段：左=動作イメージ画像／右=概要アピールポイント-->
+<main class="middle-section">
+<!--左：動作イメージ画像（images/image.png を表示) -->
+<section class="preview-area">
+<h2 class="section-title">プログラム動作イメージ＜/h2>
+<div class="preview-box">
+<!--各自がimages フォルダにimage.png ファイルを保存 -->
+<img
+src="images/image.png"
+alt="プログラム動作イメージ”
+class="preview-image"
+/>
+</div>
+</section>
+<!--右：概要とアピールポイント-->
+<section class="description-area">
+<h2 class="section-title">プログラム概要とアピールポイント</h2>
+<div class="description-box">
+<h3>概要</h3>
+<p>
+（概要を書いてください）<br/>
+（概要を書いてください）<br/>
+（概要を書いてください）<br/>
+</p>
+<h3>アピールポイントく/h3>
+<ul>
+<li>（アピールポイントを書いてください）＜/li>
+<Ii>（アピールポイントを書いてください）＜/li>
+<Ii>（アピールポイントを書いてください）</li>
+</ul>
+</div>
+</section>
+</main>
+<!--下段：開発環境プログラム起動ボタン -->
+<footer class="bottom-section">
+<div class="info-row">
+<span class="info-label">|}R!: <span>
+<span class="info-value">
+GitHub•HTML / CSS / JavaScripto
+</span>
+</div>
+<div class="info-row">
+<label class="info-label" for="program-path"> 
+index.html
+</label> 
+<input
+ id="program-path" 
+ class="path-input" 
+ type="text"
+ placeholder="file:///C:/Users/user/Documents/mygame/index.html"
+ />
+ <button id="launch-btn" class="launch-button">
+      プログラム起動
+ </button>
+</div>
+</footer>
+</div>
+<script src="script.js"></script>
 </body>
 </html>

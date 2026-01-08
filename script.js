@@ -1,27 +1,14 @@
-const dice = document.getElementById('dice');
-const rollBtn = document.getElementById('roll-btn');
-const message = document.getElementById('message');
-
-rollBtn.addEventListener('click', () => {
-    // 1. Add animation class
-    dice.classList.add('rolling');
-    rollBtn.disabled = true;
-    message.textContent = "Rolling...";
-
-    // 2. Wait 0.6 seconds for the "animation" to finish
-    setTimeout(() => {
-        const result = Math.floor(Math.random() * 6) + 1;
-        
-        // 3. Update the dice UI
-        dice.textContent = result;
-        dice.classList.remove('rolling');
-        rollBtn.disabled = false;
-        
-        // 4. Update the message
-        message.textContent = `You rolled a ${result}!`;
-        
-        if (result === 6) {
-            message.textContent += " Amazing! A 6!";
-        }
-    }, 600);
+document.addEventListener("DOMContentLoaded", () => {
+const launchBtn = document.getElementById("launch-btn");
+const pathInput = document.getElementById("program-path");
+    launchBtn.addEventListener("click", () => {
+const url = pathInput.value.trim();
+if (!url) {
+alert("index.html の場所を入力してください.");
+return;
+}
+// 別タブ（新しい画面）で開く
+// 発表レイアウトの画面はそのまま残る
+window.open(url,"_blank");
+});
 });
