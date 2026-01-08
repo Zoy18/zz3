@@ -49,8 +49,8 @@ justify-content: center;
 align-items: center;
 }
 .preview-image {
-max-width: 5%;
-max-height: 5%;
+max-width: 120%;
+max-height: 120%;
 object-fit: contain;
 }
 /* 概要アピール枠 */
@@ -93,4 +93,10 @@ opacity: 0.9;
 .note {
 font-size: 12px;
 color: #777;
+}
+
+.image {
+    max-width: 30%;
+    max-height: 30%;
+    object-fit: contain;
 }
